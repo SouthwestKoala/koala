@@ -19,6 +19,6 @@
 	}
 
 	div span {
-		@apply rounded p-2 bg-yellow-400;
+		@apply rounded p-2 text-slate-100 bg-purple-500;
 	}
 </style>

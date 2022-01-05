@@ -50,13 +50,13 @@
 <slot name="items" items={$paginatedItems} />
 
 {#if $pageCount > 1}
-	<nav class="border-t border-gray-200 px-4 flex items-center justify-between sm:px-0">
+	<nav class="border-t border-slate-200 px-4 flex items-center justify-between sm:px-0">
 		<div class="-mt-px w-0 flex-1 flex">
 			<a
 				href={prevLink()}
-				class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
+				class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-slate-500 hover:text-slate-700 hover:border-slate-300"
 			>
-				<Solid.ArrowNarrowLeft class="text-gray-400 w-5 h-5" />
+				<Solid.ArrowNarrowLeft class="text-slate-400 w-5 h-5" />
 				Previous
 			</a>
 		</div>
@@ -73,15 +73,15 @@
 				{:else if p === 1 || p === $pageCount || (p >= $currentPage - LIMIT && p <= $currentPage + LIMIT)}
 					<a
 						href={pageLink(p)}
-						class="border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+						class="border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
 					>
 						{p}
 					</a>
 				{:else if p >= $currentPage - (LIMIT + 1) && p <= $currentPage + (LIMIT + 1)}
 					<span
-						class="border-transparent text-gray-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+						class="border-transparent text-slate-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
 					>
-						<Solid.DotsHorizontal class="text-gray-400 w-5 h-5" />
+						<Solid.DotsHorizontal class="text-slate-400 w-5 h-5" />
 					</span>
 				{/if}
 			{/each}
@@ -89,10 +89,10 @@
 		<div class="-mt-px w-0 flex-1 flex justify-end">
 			<a
 				href={nextLink()}
-				class="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300"
+				class="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-slate-500 hover:text-slate-700 hover:border-slate-300"
 			>
 				Next
-				<Solid.ArrowNarrowRight class="text-gray-400 w-5 h-5" />
+				<Solid.ArrowNarrowRight class="text-slate-400 w-5 h-5" />
 			</a>
 		</div>
 	</nav>

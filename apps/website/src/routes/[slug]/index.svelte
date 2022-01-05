@@ -36,9 +36,9 @@
 <SEO {description} {image} {keywords} {title} />
 
 <Page>
-	<Header slot="header" subtitle={slug} {title}>
+	<Header slot="header" {title}>
 		{#if lead}
-			<p class="mt-8 text-xl text-gray-600 dark:text-gray-400 leading-8">
+			<p class="mt-8 text-xl text-slate-600 dark:text-slate-400 leading-8">
 				{lead}
 			</p>
 		{/if}
