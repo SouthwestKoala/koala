@@ -1,0 +1,39 @@
+{
+  "name": "southwestkoala-content",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "Matthew Gibbons <mhgibbons@me.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@sanity/base": "^2.23.3",
+    "@sanity/color": "^2.1.6",
+    "@sanity/components": "^2.14.0",
+    "@sanity/core": "^2.23.2",
+    "@sanity/data-aspects": "^2.18.0",
+    "@sanity/default-layout": "^2.23.3",
+    "@sanity/default-login": "^2.23.2",
+    "@sanity/desk-tool": "^2.23.3",
+    "@sanity/form-builder": "^2.23.3",
+    "@sanity/vision": "^2.23.3",
+    "caniuse-lite": "^1.0.30001296",
+    "lodash": "^4.17.21",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-is": "^16.13.1",
+    "rxjs": "^6.6.7",
+    "sanity-plugin-asset-source-unsplash": "^0.1.5",
+    "styled-components": "^5.3.3",
+    "webpack": "^1.15.0"
+  }
+}

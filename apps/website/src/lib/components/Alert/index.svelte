@@ -1,0 +1,49 @@
+<script lang="ts">
+	import { Solid } from '$lib/components/HeroIcons';
+
+	export let style: 'info' = 'info';
+</script>
+
+<div class="rounded-md p-4" class:info={style === 'info'}>
+	<div class="flex">
+		<div class="flex-shrink-0">
+			<svg
+				class="h-5 w-5"
+				xmlns="http://www.w3.org/2000/svg"
+				viewBox="0 0 20 20"
+				fill="currentColor"
+				aria-hidden="true"
+			>
+				<path
+					fill-rule="evenodd"
+					d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+					clip-rule="evenodd"
+				/>
+			</svg>
+		</div>
+		<div class="ml-3 flex-1 md:flex md:justify-between">
+			<p class="text-sm font-medium inline-flex items-center justify-start">
+				<slot />
+			</p>
+			<p class="mt-3 text-sm md:mt-0 md:ml-6">
+				<a href="?" class="whitespace-nowrap font-medium inline-flex items-center justify-end"
+					>Clear<Solid.X /></a
+				>
+			</p>
+		</div>
+	</div>
+</div>
+
+<style lang="postcss">
+	div.info {
+		@apply bg-blue-50 text-blue-700;
+	}
+
+	div.info svg {
+		@apply text-blue-400;
+	}
+
+	div.info a {
+		@apply hover:text-blue-600;
+	}
+</style>
