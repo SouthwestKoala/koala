@@ -48,7 +48,7 @@
 				</span>
 			</div>
 		</div>
-		<p class="mt-8 text-xl text-slate-700 dark:text-slate-300 leading-8">
+		<p class="mt-8 text-xl italic text-slate-700 dark:text-slate-300 leading-8">
 			{lead}
 		</p>
 	</Header>

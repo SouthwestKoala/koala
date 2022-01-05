@@ -38,7 +38,7 @@
 <Page>
 	<Header slot="header" {title}>
 		{#if lead}
-			<p class="mt-8 text-xl text-slate-600 dark:text-slate-400 leading-8">
+			<p class="mt-8 text-xl italic text-slate-600 dark:text-slate-400 leading-8">
 				{lead}
 			</p>
 		{/if}
