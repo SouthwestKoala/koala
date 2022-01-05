@@ -20,7 +20,7 @@ export const get: RequestHandler = async ({ params }) => {
 	}`;
 	const queryParams = { slug };
 
-	const { page } = await client.fetch(query, queryParams)
+	const { page } = await client.fetch(query, queryParams);
 
 	if (page) {
 		return {
