@@ -11,14 +11,17 @@
 			<div class="inline-flex items-center justify-start">
 				<a
 					href="/"
-					class="text-base md:text-3xl font-black tracking-tight text-slate-900 dark:text-slate-100"
+					class="text-base md:text-xl font-black tracking-tight text-slate-900 dark:text-slate-100 uppercase"
 					>Southwest Koala</a
 				>
 			</div>
 			<nav class="flex items-center justify-end space-x-8">
 				<div class="hidden md:flex items-center justify-end space-x-8">
 					{#each siteNavigation as { href, name } (name)}
-						<a class="text-slate-800 dark:text-slate-200 hover:text-slate-600 dark:hover:text-slate-400 md:text-lg font-medium" {href}>{name}</a>
+						<a
+							class="text-slate-800 dark:text-slate-200 hover:text-slate-600 dark:hover:text-slate-400 md:text-lg font-medium"
+							{href}>{name}</a
+						>
 					{/each}
 				</div>
 			</nav>
