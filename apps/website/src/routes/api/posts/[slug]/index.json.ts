@@ -15,7 +15,7 @@ export const get: RequestHandler = async ({ params }) => {
 				body: {
 					post: {
 						...post,
-						slug: `/blog/${post.slug}`
+						slug: `/posts/${post.slug}`
 					}
 				}
 			};

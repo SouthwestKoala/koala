@@ -43,12 +43,12 @@
 				<div class="w-full border-t border-slate-300 dark:border-slate-700" />
 			</div>
 			<div class="relative flex justify-center text-sm">
-				<span class="px-2 bg-slate-100 dark:bg-slate-900 text-gray-600 dark:text-gray-400">
+				<span class="px-2 bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400">
 					<Time timestamp={publishedAt} />
 				</span>
 			</div>
 		</div>
-		<p class="mt-8 text-xl text-gray-700 dark:text-gray-300 leading-8">
+		<p class="mt-8 text-xl text-slate-700 dark:text-slate-300 leading-8">
 			{lead}
 		</p>
 	</Header>

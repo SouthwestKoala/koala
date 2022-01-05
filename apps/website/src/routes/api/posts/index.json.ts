@@ -14,7 +14,7 @@ export const get: RequestHandler = async () => {
 					posts: [
 						...posts.map((post: { slug: string }) => ({
 							...post,
-							slug: `/blog/${post.slug}`
+							slug: `/posts/${post.slug}`
 						}))
 					]
 				}
