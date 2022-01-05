@@ -1,7 +1,7 @@
 <script lang="ts">
 	const siteNavigation = [
-		{ name: 'Home', href: '/' },
-		{ name: 'Blog', href: '/blog' }
+		{ name: 'Posts', href: '/posts' },
+		{ name: 'About', href: '/about' }
 	];
 </script>
 
