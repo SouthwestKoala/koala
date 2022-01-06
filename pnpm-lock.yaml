@@ -92,7 +92,7 @@ importers:
       groq: ^2.15.0
       jose: ^4.3.7
       nanoid: ^3.1.30
-      pnpm: ^6.24.4
+      pnpm: ^6.25.0
       postcss: ^8.4.5
       postcss-import: ^14.0.2
       postcss-load-config: ^3.1.1
@@ -106,7 +106,7 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.4
     dependencies:
-      pnpm: 6.24.4
+      pnpm: 6.25.0
     devDependencies:
       '@portabletext/svelte': 0.2.0_svelte@3.44.3
       '@rgossiaux/svelte-headlessui': 1.0.0-beta.7_svelte@3.44.3
@@ -2541,7 +2541,7 @@ packages:
     peerDependencies:
       svelte: ^3.44.0
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.33_svelte@3.44.3+vite@2.7.10
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.34_svelte@3.44.3+vite@2.7.10
       sade: 1.8.0
       svelte: 3.44.3
       vite: 2.7.10
@@ -2553,8 +2553,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.33_svelte@3.44.3+vite@2.7.10:
-    resolution: {integrity: sha512-aj0h2+ZixgT+yoJFIs8dRRw/Cj9tgNu3+hY4CJikpa04mfhR61wXqJFfi2ZEFMUvFda5nCxKYIChFkc6wq5fJA==}
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.34_svelte@3.44.3+vite@2.7.10:
+    resolution: {integrity: sha512-qZH2jndijrdkvevgbO7OH3iQsviM5Kz7h5APiNP4yEMZTrwq9bifzYvco6BprwtPvLb5wYlRVFZUOdusY6AovQ==}
     engines: {node: ^14.13.1 || >= 16}
     peerDependencies:
       diff-match-patch: ^1.0.5
@@ -2716,7 +2716,7 @@ packages:
   /@types/sass/1.43.1:
     resolution: {integrity: sha512-BPdoIt1lfJ6B7rw35ncdwBZrAssjcwzI5LByIrYs+tpXlj/CAkuVdRsgZDdP4lq5EjyWzwxZCqAoFyHKFwp32g==}
     dependencies:
-      '@types/node': 17.0.8
+      '@types/node': 16.11.19
     dev: true
 
   /@types/scheduler/0.16.2:
@@ -8906,8 +8906,8 @@ packages:
     engines: {node: '>=10.13.0'}
     dev: true
 
-  /pnpm/6.24.4:
-    resolution: {integrity: sha512-bUdRZ1TIZDlfohEb4ONI0Zb+KiEq6N7Zwb41S7Yi66gWLIvZUKFxMPxnKjfpArS+3i8YQzoEwJd8bE2cIweLyg==}
+  /pnpm/6.25.0:
+    resolution: {integrity: sha512-Hlck6S8j7obFkkfQCnDJXIEBRNK4wIanMzDfpRE5TNbLsJnxbWXGbMV5ZhDf8Q8xy6RkBWdoKAmliL0nLmzxHQ==}
     engines: {node: '>=12.17'}
     hasBin: true
     dev: false
