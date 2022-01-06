@@ -23,7 +23,6 @@
 	import type { PortableTextBlocks } from '@portabletext/svelte/ptTypes';
 	import Page, { Header } from '$lib/layouts/Page';
 	import { Image, Prose, SEO } from '$lib/components';
-	import { Link } from '$lib/serializers/marks';
 
 	export let body: PortableTextBlocks;
 	export let description: string;
@@ -44,11 +43,11 @@
 			</p>
 		{/if}
 	</Header>
-	<svelte:fragment slot="body">
-		<Prose slot="body">
-			<PortableText blocks={body.slice(0, 1)} serializers={{ marks: { link: Link } }} />
+	<Prose slot="body">
+		<svelte:fragment slot="blocks" let:serializers>
+			<PortableText blocks={body.slice(0, 1)} {serializers} />
 			<Image {image} />
-			<PortableText blocks={body.slice(1)} serializers={{ marks: { link: Link } }} />
-		</Prose>
-	</svelte:fragment>
+			<PortableText blocks={body.slice(1)} {serializers} />
+		</svelte:fragment>
+	</Prose>
 </Page>
