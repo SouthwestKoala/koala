@@ -29,7 +29,7 @@
 >
 	<div class="mx-auto p-8">
 		<div class="sm:flex">
-			<p class="text-4xl font-extrabold text-purple-500 sm:text-5xl">{status}</p>
+			<p class="text-4xl font-extrabold text-orange-500 sm:text-5xl">{status}</p>
 			<div class="sm:ml-6">
 				<div class="sm:border-l sm:border-slate-200 dark:sm:border-slate-800 sm:pl-6">
 					<h1
@@ -44,7 +44,7 @@
 				<div class="mt-10 flex space-x-3 sm:border-l sm:border-transparent sm:pl-6">
 					<a
 						href="/"
-						class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-slate-100 dark:text-slate-900 bg-purple-500 hover:bg-purple-600 dark:hover:bg-purple-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
+						class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-slate-100 dark:text-slate-900 bg-orange-500 hover:bg-orange-600 dark:hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
 					>
 						Go back home
 					</a>

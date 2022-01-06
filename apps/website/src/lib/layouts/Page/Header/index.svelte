@@ -5,7 +5,7 @@
 
 <div class="text-lg max-w-prose mx-auto text-center">
 	<h1>
-		<span class="block text-base text-purple-500 font-semibold tracking-wide uppercase"
+		<span class="block text-base text-orange-500 font-semibold tracking-wide uppercase"
 			>{subtitle}</span
 		>
 		<span

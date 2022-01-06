@@ -12,7 +12,7 @@
 
 <li class="relative md:col-span-2 md:grid md:grid-cols-2">
 	<div
-		class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-slate-100 focus-within:ring-purple-500 overflow-hidden"
+		class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-slate-100 focus-within:ring-orange-500 overflow-hidden"
 	>
 		<img
 			src={urlFor(image).maxWidth(320).maxHeight(320).url()}
@@ -25,14 +25,14 @@
 	</div>
 	<div class="flex flex-col justify-between m-2 p-2">
 		<div>
-			<p class="mt-2 block text-xl font-medium text-purple-600 truncate pointer-events-none">
+			<p class="mt-2 block text-xl font-medium text-orange-600 truncate pointer-events-none">
 				{title}
 			</p>
 			<p class="mt-2 block text-base font-normal text-slate-900 line-clamp-5">
 				{body}
 			</p>
 		</div>
-		<a href={slug} class="text-purple-600 text-right inline-flex items-center justify-end"
+		<a href={slug} class="text-orange-600 text-right inline-flex items-center justify-end"
 			>Read <Solid.ArrowNarrowRight /></a
 		>
 	</div>
