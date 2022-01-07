@@ -105,7 +105,7 @@ importers:
       tailwindcss: 3.0.11
       tslib: ^2.3.1
       typescript: ^4.5.4
-      ui: link:../../packages/ui
+      ui: file:../../packages/ui
     dependencies:
       pnpm: 6.25.0
     devDependencies:
