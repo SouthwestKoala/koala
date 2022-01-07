@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Button } from '$lib/components';
+	import { Button } from '$lib';
 </script>
 
 <main class="max-w-xl mx-auto space-y-8">
