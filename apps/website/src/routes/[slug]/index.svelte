@@ -25,6 +25,8 @@
 	import type { PortableTextBlocks } from '@portabletext/svelte/ptTypes';
 	import Page, { Header } from '$lib/layouts/Page';
 	import { Image, Prose, SEO } from '$lib/components';
+	import { Button } from 'ui/elements';
+
 
 	export let body: PortableTextBlocks;
 	export let description: string;
@@ -36,7 +38,7 @@
 </script>
 
 <SEO {description} {image} {keywords} {title} />
-
+<Button />
 <Page>
 	<Header slot="header" {title}>
 		{#if lead}
