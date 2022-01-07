@@ -4,7 +4,6 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
-		"package": "svelte-kit package",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -51,5 +50,8 @@
 		"typescript": "^4.5.4",
 		"ui": "file:../../packages/ui/package"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"pnpm": "^6.25.0"
+	}
 }
