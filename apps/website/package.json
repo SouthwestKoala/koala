@@ -4,7 +4,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"prebuild": "npx pnpm install -r --store=node_modules/.pnpm-store",
-		"build": "pnpm --workspace-root package && svelte-kit build",
+		"build": "npx pnpm package --workspace-root package && svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
