@@ -89,7 +89,6 @@ importers:
       groq: ^2.15.0
       jose: ^4.3.7
       nanoid: ^3.1.30
-      pnpm: ^6.25.1
       postcss: ^8.4.5
       postcss-import: ^14.0.2
       postcss-load-config: ^3.1.1
@@ -103,8 +102,6 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.4
       ui: file:../../packages/ui/package
-    dependencies:
-      pnpm: 6.25.1
     devDependencies:
       '@portabletext/svelte': 0.2.0_svelte@3.45.0
       '@rgossiaux/svelte-headlessui': 1.0.0-beta.7_svelte@3.45.0
@@ -3284,12 +3281,6 @@ packages:
     resolution: {integrity: sha512-40QW5YalBNfQo5yRYmiw7Yz6TKKVr3h6970B2YE+3fQpsWcrbj1PzJgxeJ19DRQjhMbKPIuMY8rFaXc8moolVw==}
     engines: {node: '>=10.13.0'}
     dev: true
-
-  /pnpm/6.25.1:
-    resolution: {integrity: sha512-/jvwDU8XJ3ntw1fJ5pYGN+nMqxHuXoarajc/95CrAB9+lVfjTJooiOc5BmxT7GrZzcEwdpJKMCdN3yR1ItGFMw==}
-    engines: {node: '>=12.17'}
-    hasBin: true
-    dev: false
 
   /postcss-calc/8.2.0_postcss@8.4.5:
     resolution: {integrity: sha512-PueXCv288diX7OXyJicGNA6Q3+L4xYb2cALTAeFj9X6PXnj+s4pUf1vkZnwn+rldfu2taCA9ondjF93lhRTPFA==}

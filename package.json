@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "pnpm -r dev --filter {apps}",
-    "build": "pnpm package && pnpm build --filter {apps}",
+    "build": "pnpm build --filter {apps}",
     "package": "pnpm package --filter {packages}",
     "lint": "pnpm -r lint --filter {apps} --filter {packages}",
     "format": "pnpm -r format --filter {apps} --filter {packages}"
