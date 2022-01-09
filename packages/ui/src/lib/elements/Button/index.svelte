@@ -22,7 +22,7 @@
 		@apply text-slate-800 dark:text-slate-200;
 		@apply hover:text-slate-700 dark:hover:text-slate-300;
 		@apply bg-orange-100 dark:bg-orange-900;
-		@apply hover:bg-orange-200 dark:hover:bg-slate-800;
+		@apply hover:bg-orange-200 dark:hover:bg-orange-800;
 	}
 
 	button.primary {
