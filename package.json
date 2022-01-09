@@ -5,11 +5,11 @@
   "homepage": "https://github.com/southwestkoala/koala/README.md",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r dev --filter {apps}",
+    "dev": "pnpm dev --filter {apps}",
     "build": "pnpm build --filter {apps}",
     "package": "pnpm package --filter {packages}",
-    "lint": "pnpm -r lint --filter {apps} --filter {packages}",
-    "format": "pnpm -r format --filter {apps} --filter {packages}"
+    "lint": "pnpm lint --filter {apps} --filter {packages}",
+    "format": "pnpm format --filter {apps} --filter {packages}"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.9.0",
