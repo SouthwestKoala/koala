@@ -38,6 +38,7 @@ importers:
       groq: ^2.15.0
       jose: ^4.3.8
       nanoid: ^3.1.30
+      pnpm: ^6.25.1
       prettier: ^2.5.1
       prettier-plugin-svelte: ^2.5.1
       svelte: ^3.45.0
@@ -45,6 +46,8 @@ importers:
       svelte-preprocess: ^4.10.1
       tslib: ^2.3.1
       typescript: ^4.5.4
+    dependencies:
+      pnpm: 6.25.1
     devDependencies:
       '@playwright/test': 1.17.1
       '@sanity/client': 2.23.2
@@ -92,6 +95,7 @@ importers:
       groq: ^2.15.0
       jose: ^4.3.8
       nanoid: ^3.1.30
+      pnpm: ^6.25.1
       postcss: ^8.4.5
       postcss-import: ^14.0.2
       postcss-load-config: ^3.1.1
@@ -105,6 +109,8 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.4
       ui: file:../../packages/ui/package
+    dependencies:
+      pnpm: 6.25.1
     devDependencies:
       '@portabletext/svelte': 0.2.0_svelte@3.45.0
       '@rgossiaux/svelte-headlessui': 1.0.0-beta.7_svelte@3.45.0
