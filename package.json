@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "pnpm dev --filter {apps}",
     "build": "pnpm build --filter {apps}",
-    "package": "pnpm package --filter {packages}",
+    "package": "pnpm install --filter {packages} && pnpm package --filter {packages}",
     "lint": "pnpm lint --filter {apps} --filter {packages}",
     "format": "pnpm format --filter {apps} --filter {packages}"
   },
