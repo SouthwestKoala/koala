@@ -1,5 +1,2 @@
 [build]
   command = "pnpm build || (npm install --no-save --production pnpm && pnpm build)"
-
-[build.environment]
-  NPM_FLAGS = "--version"
