@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"prebuild": "npx pnpm install -r --store=node_modules/.pnpm-store && pnpm -w package",
+		"prebuild": "npx pnpm install -w -r --store=node_modules/.pnpm-store && pnpm -w package",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
