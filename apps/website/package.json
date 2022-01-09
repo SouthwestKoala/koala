@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"build": "pnpm --workspace-root package && svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
@@ -16,7 +16,6 @@
 		"@sanity/client": "^2.23.2",
 		"@sanity/image-url": "^1.0.1",
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/adapter-netlify": "^1.0.0-next.38",
 		"@sveltejs/kit": "1.0.0-next.216",
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/forms": "^0.4.0",
