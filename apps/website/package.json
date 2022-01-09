@@ -3,7 +3,6 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"prebuild": "npx pnpm install --workspace-root --recursive --shamefully-hoist --store=node_modules/.pnpm-store && npx pnpm package --workspace-root --filter {packages}",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
