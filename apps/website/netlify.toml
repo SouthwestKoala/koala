@@ -1,6 +1,6 @@
 [build]
   command = """\
-    npx pnpm install --store=node_modules/.pnpm-store --workspace-root --filter ./packages
+    npx pnpm install --workspace-root --shamefully-hoist --store=node_modules/.pnpm-store --filter ./packages
     """
 
 [build.environment]
