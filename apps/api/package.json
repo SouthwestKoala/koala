@@ -22,7 +22,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.3.0",
 		"groq": "^2.15.0",
-		"jose": "^4.3.7",
+		"jose": "^4.3.8",
 		"nanoid": "^3.1.30",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.1",
