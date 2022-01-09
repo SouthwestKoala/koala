@@ -43,7 +43,6 @@
 			<ul
 				slot="items"
 				let:items
-				role="list"
 				class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 xl:grid-cols-4 sm:gap-x-6 xl:gap-x-8"
 			>
 				{#each items as post (post.slug)}
