@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "pnpm -r dev --filter api --filter website",
     "build": "pnpm build --filter api --filter website",
+    "package": "pnpm package --filter {packages}",
     "lint": "pnpm -r lint --filter api --filter website",
     "format": "pnpm -r format --filter api --filter website"
   },
