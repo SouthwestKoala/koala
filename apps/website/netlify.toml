@@ -1,2 +1,2 @@
 [build]
-  command = "npx pnpm packages --filter {pacakges} && npx pnpm build"
+  command = "npx pnpm packages --filter {packages} && npx pnpm build"
