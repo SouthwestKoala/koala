@@ -49,8 +49,5 @@
 		"typescript": "^4.5.4",
 		"ui": "file:../../packages/ui/package"
 	},
-	"type": "module",
-	"dependencies": {
-		"pnpm": "^6.25.1"
-	}
+	"type": "module"
 }
