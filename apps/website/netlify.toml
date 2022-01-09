@@ -1,7 +1,10 @@
 [build]
   command = """\
     npx pnpm install --workspace-root --shamefully-hoist --store=node_modules/.pnpm-store --filter ./packages
+    npx pnpm package --workspace-root --store=node_modules/.pnpm-store --filter ./packages
+    npx pnpm install --shamefully-hoist --store=node_modules/.pnpm-store
+    npx pnpm build
     """
 
 [build.environment]
-  NPM_FLAGS = "--production"
+  NPM_FLAGS = "--only=production"
