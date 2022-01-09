@@ -1,5 +1,0 @@
-[build]
-  command = "pnpm install -w --filter {packages} && pnpm package -w --filter {packages} && pnpm -w --filter {packages} && pnpm build"
-
-[build.environment]
-  NPM_FLAGS = "--only=production"
