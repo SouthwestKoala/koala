@@ -1,2 +1,5 @@
 [build]
-  command = "npx pnpm packages --filter {packages} && npx pnpm build"
+  command = "npx pnpm install --filter {packages} --recursive --store=node_modules/.pnpm-store && npx pnpm package --filter {packages} --recursive && npx pnpm install --recursive --store=node_modules/.pnpm-store && npx pnpm build"
+
+[build.environment]
+  NPM_FLAGS = "--version"
