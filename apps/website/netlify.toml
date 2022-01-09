@@ -2,3 +2,6 @@
   command = """\
     npx pnpm install --workspace-root --shamefully-hoist --store=node_modules/.pnpm-store --filter ./packages
     """
+
+[build.environment]
+  NPM_FLAGS = "--production"
