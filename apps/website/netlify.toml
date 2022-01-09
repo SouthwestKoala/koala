@@ -1,9 +1,9 @@
 [build]
   command = """\
-    npx pnpm install --workspace-root --store=node_modules/.pnpm-store --shamefully-hoist --filter {packages}
-    npx pnpm package --workspace-root --store=node_modules/.pnpm-store --filter {packages}
-    npx pnpm install --store=node_modules/.pnpm-store --shamefully-hoist
-    npx pnpm build --store=node_modules/.pnpm-store
+    npx pnpm install --workspace-root --shamefully-hoist --store=node_modules/.pnpm-store --filter ./packages
+    npx pnpm package --workspace-root --store=node_modules/.pnpm-store --filter ./packages
+    npx pnpm install --shamefully-hoist --store=node_modules/.pnpm-store
+    npx pnpm build
     """
 
 [build.environment]
