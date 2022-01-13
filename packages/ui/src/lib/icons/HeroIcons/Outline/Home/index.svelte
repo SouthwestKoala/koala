@@ -1,5 +1,5 @@
 <script lang="ts">
-	let klass = 'w-6 h-6';
+	let klass = 'text-accent w-6 h-6';
 
 	export { klass as class };
 </script>
