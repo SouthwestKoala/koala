@@ -6,7 +6,6 @@
 <button
 	type="button"
 	on:click
-	class="inline-flex items-center border border-transparent font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500"
 	class:primary
 	class:xs={variant === 'xs'}
 	class:sm={variant === 'sm'}
@@ -19,17 +18,35 @@
 
 <style lang="postcss">
 	button {
-		@apply text-slate-800 dark:text-slate-200;
-		@apply hover:text-slate-700 dark:hover:text-slate-300;
-		@apply bg-orange-100 dark:bg-orange-900;
-		@apply hover:bg-orange-200 dark:hover:bg-orange-800;
+		@apply inline-flex items-center justify-center;
+		@apply border border-transparent shadow;
+		@apply font-medium;
+
+		@apply text-[color:var(--theme-neutral-900)] dark:text-[color:var(--theme-neutral-100)];
+		@apply bg-[color:var(-theme-accent-100)] dark:bg-[color:var(--theme-accent-900)];
+
+		&:active {
+			@apply relative inset-y-px shadow-none;
+		}
+
+		&:focus {
+			@apply outline-none ring-2 ring-offset-2 ring-[color:var(--theme-accent-500)];
+		}
+
+		&:hover {
+			@apply text-[color:var(--theme-neutral-800)] dark:text-[color:var(--theme-neutral-200)];
+			@apply bg-[color:var(--theme-accent-200)] dark:bg-[color:var(--theme-accent-800)];
+		}
 	}
 
 	button.primary {
-		@apply text-slate-100 dark:text-slate-900;
-		@apply hover:text-slate-200 dark:hover:text-slate-800;
-		@apply bg-orange-500;
-		@apply hover:bg-orange-600 dark:hover:bg-orange-400;
+		@apply text-[color:var(--theme-neutral-100)] dark:text-[color:var(--theme-neutral-900)];
+		@apply bg-[color:var(--theme-accent-500)];
+
+		&:hover {
+			@apply text-[color:var(--theme-neutral-200)] dark:text-[color:var(--theme-neutral-800)];
+			@apply bg-[color:var(--theme-accent-800)] dark:bg-[color:var(--theme-accent-200)];
+		}
 	}
 
 	button.xs {
