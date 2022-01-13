@@ -14,6 +14,12 @@
 					...post
 				}
 			};
+		} else {
+			const { status } = res;
+
+			return {
+				status
+			};
 		}
 	};
 </script>
@@ -24,7 +30,6 @@
 	import type { PortableTextBlocks } from '@portabletext/svelte/ptTypes';
 	import Page, { Header } from '$lib/layouts/Page';
 	import { Image, Prose, SEO } from '$lib/components';
-	import { Link } from '$lib/serializers/marks';
 
 	export let body: PortableTextBlocks;
 	export let description: string;
@@ -41,22 +46,22 @@
 	<Header slot="header" subtitle="Blog" {title}>
 		<div class="mt-8 relative">
 			<div class="absolute inset-0 flex items-center">
-				<div class="w-full border-t border-slate-300 dark:border-slate-700" />
+				<div class="w-full border-t border-neutral-300 dark:border-neutral-700" />
 			</div>
 			<div class="relative flex justify-center text-sm">
-				<span class="px-2 bg-slate-100 dark:bg-slate-900 text-slate-600 dark:text-slate-400">
+				<span class="px-2 bg-neutral-100 dark:bg-neutral-900 text-neutral-600 dark:text-neutral-400">
 					<Time timestamp={publishedAt} />
 				</span>
 			</div>
 		</div>
-		<p class="mt-8 text-xl italic text-slate-700 dark:text-slate-300 leading-8">
+		<p class="mt-8 text-xl italic text-neutral-700 dark:text-neutral-300 leading-8">
 			{lead}
 		</p>
 	</Header>
 	<Prose slot="body">
 		<svelte:fragment slot="blocks" let:serializers>
 			<PortableText blocks={body.slice(0, 1)} {serializers} />
-			<Image {image} />
+			{#if image}<Image {image} />{/if}
 			<PortableText blocks={body.slice(1)} {serializers} />
 		</svelte:fragment>
 	</Prose>

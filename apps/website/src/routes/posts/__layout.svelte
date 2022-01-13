@@ -13,7 +13,13 @@
 					posts: readable(posts)
 				}
 			};
-		}
+		} else {
+			const { status } = res;
+
+			return {
+				status
+			}
+		};
 	};
 </script>
 

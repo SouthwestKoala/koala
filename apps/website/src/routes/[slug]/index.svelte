@@ -16,6 +16,12 @@
 					...page
 				}
 			};
+		} else {
+			const { status } = res;
+
+			return {
+				status
+			};
 		}
 	};
 </script>
@@ -40,7 +46,7 @@
 <Page>
 	<Header slot="header" {title}>
 		{#if lead}
-			<p class="mt-8 text-xl italic text-slate-600 dark:text-slate-400 leading-8">
+			<p class="mt-8 text-xl italic text-neutral-600 dark:text-neutral-400 leading-8">
 				{lead}
 			</p>
 		{/if}

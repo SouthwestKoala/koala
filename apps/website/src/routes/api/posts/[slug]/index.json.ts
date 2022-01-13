@@ -10,15 +10,19 @@ export const get: RequestHandler = async ({ params }) => {
 	if (res.ok) {
 		const { post } = await res.json();
 
-		if (post) {
-			return {
-				body: {
-					post: {
-						...post,
-						slug: `/posts/${post.slug}`
-					}
+		return {
+			body: {
+				post: {
+					...post,
+					slug: `/posts/${post?.slug}`
 				}
-			};
+			}
+		}
+	} else {
+		const { status } = res
+
+		return {
+			status
 		}
 	}
 };

@@ -14,9 +14,9 @@
 
 <script lang="ts">
 	import { derived, Readable } from 'svelte/store';
-	import { Paginate } from '$lib/components';
+	import { Paginate, Tags } from '$lib/components';
 	import Page, { Header } from '$lib/layouts/Page';
-	import { Post as Preview } from '$lib/previews';
+	import { Post } from '$lib/previews';
 	import { tags } from '$lib/stores/tags';
 
 	export let posts: Readable<
@@ -39,6 +39,9 @@
 	<Header slot="header" subtitle="Blog" title="Thoughts and reflections." />
 
 	<svelte:fragment slot="body">
+		<div class="flex items-center justify-start">
+			<Tags tags={$tags} />
+		</div>
 		<Paginate items={taggedPosts}>
 			<ul
 				slot="items"
@@ -46,7 +49,7 @@
 				class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-8 xl:grid-cols-4 sm:gap-x-6 xl:gap-x-8"
 			>
 				{#each items as post (post.slug)}
-					<Preview {...post} />
+					<Post {...post} />
 				{/each}
 			</ul>
 		</Paginate>
