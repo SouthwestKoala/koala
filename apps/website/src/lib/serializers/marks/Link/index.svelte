@@ -12,6 +12,6 @@
 
 <a
 	{href}
-	class="text-current font-normal decoration-orange-500 decoration-2 underline-offset-4 hover:text-orange-500"
+	class="text-current font-normal decoration-accent-500 decoration-2 underline-offset-4 hover:text-accent-500"
 	><slot /></a
 >
