@@ -19,6 +19,6 @@
 	}
 
 	div span {
-		@apply rounded p-2 text-slate-100 bg-orange-500;
+		@apply rounded p-2 text-neutral-100 bg-accent-500;
 	}
 </style>

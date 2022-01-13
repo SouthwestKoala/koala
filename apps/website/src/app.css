@@ -11,3 +11,27 @@
 		font-family: 'Inter var', sans-serif;
 	}
 }
+
+:root {
+	--theme-neutral-100: theme('colors.neutral.100');
+	--theme-neutral-200: theme('colors.neutral.200');
+	--theme-neutral-300: theme('colors.neutral.300');
+	--theme-neutral-400: theme('colors.neutral.400');
+	--theme-neutral-500: theme('colors.neutral.500');
+	--theme-neutral-600: theme('colors.neutral.600');
+	--theme-neutral-700: theme('colors.neutral.700');
+	--theme-neutral-800: theme('colors.neutral.800');
+	--theme-neutral-900: theme('colors.neutral.900');
+}
+
+:root {
+	--theme-accent-100: theme('colors.accent.100');
+	--theme-accent-200: theme('colors.accent.200');
+	--theme-accent-300: theme('colors.accent.300');
+	--theme-accent-400: theme('colors.accent.400');
+	--theme-accent-500: theme('colors.accent.500');
+	--theme-accent-600: theme('colors.accent.600');
+	--theme-accent-700: theme('colors.accent.700');
+	--theme-accent-800: theme('colors.accent.800');
+	--theme-accent-900: theme('colors.accent.900');
+}

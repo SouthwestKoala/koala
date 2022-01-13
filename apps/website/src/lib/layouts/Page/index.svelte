@@ -12,6 +12,6 @@
 
 <style lang="postcss">
 	main {
-		@apply max-w-screen-2xl mx-auto py-16 px-8 sm:py-24 border-y border-slate-200 dark:border-slate-800;
+		@apply max-w-screen-2xl mx-auto py-16 px-8 sm:py-24 border-y border-neutral-200 dark:border-neutral-800;
 	}
 </style>
