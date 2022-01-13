@@ -2,9 +2,9 @@
 	"name": "website",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "svelte-kit dev",
+		"dev": "svelte-kit dev --host",
 		"build": "svelte-kit build",
-		"preview": "svelte-kit preview",
+		"preview": "svelte-kit preview --host",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
@@ -15,11 +15,12 @@
 		"@rgossiaux/svelte-headlessui": "^1.0.0-beta.7",
 		"@sanity/client": "^2.23.2",
 		"@sanity/image-url": "^1.0.1",
+		"@southwestkoala/ui": "link:../../packages/ui/package",
 		"@sveltejs/adapter-auto": "next",
-		"@sveltejs/kit": "1.0.0-next.216",
+		"@sveltejs/kit": "next",
 		"@tailwindcss/aspect-ratio": "^0.4.0",
 		"@tailwindcss/forms": "^0.4.0",
-		"@tailwindcss/line-clamp": "^0.3.0",
+		"@tailwindcss/line-clamp": "^0.3.1",
 		"@tailwindcss/typography": "^0.5.0",
 		"@types/cookie": "^0.4.1",
 		"@types/node": "^16.11.19",
@@ -33,23 +34,23 @@
 		"eslint-plugin-svelte3": "^3.3.0",
 		"groq": "^2.15.0",
 		"jose": "^4.3.8",
-		"nanoid": "^3.1.30",
+		"nanoid": "^3.1.32",
 		"postcss": "^8.4.5",
 		"postcss-import": "^14.0.2",
 		"postcss-load-config": "^3.1.1",
+		"postcss-nesting": "^10.1.2",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.5.1",
-		"svelte": "^3.45.0",
-		"svelte-check": "^2.2.11",
+		"svelte": "^3.46.1",
+		"svelte-check": "^2.2.12",
 		"svelte-preprocess": "^4.10.1",
 		"svelte-time": "^0.6.1",
 		"tailwindcss": "3.0.11",
 		"tslib": "^2.3.1",
-		"typescript": "^4.5.4",
-		"ui": "link:../../packages/ui/package"
+		"typescript": "^4.5.4"
 	},
 	"type": "module",
 	"dependencies": {
-		"pnpm": "^6.25.1"
+		"pnpm": "^6.26.0"
 	}
 }
