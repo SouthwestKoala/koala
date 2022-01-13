@@ -11,5 +11,8 @@
 	<meta name="twitter:site" content="@southwestkoala" />
 	<meta name="twitter:title" content={title} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content={urlFor(image).width(320).maxHeight(320).fit('crop').url()} />
+	{#if image}<meta
+			name="twitter:image"
+			content={urlFor(image).width(320).maxHeight(320).fit('crop').url()}
+		/>{/if}
 </svelte:head>
