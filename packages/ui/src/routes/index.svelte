@@ -1,6 +1,8 @@
 <script lang="ts">
-	import { Button } from '$lib';
+	import { Breakpoint, Button } from '$lib/elements';
 </script>
+
+<Breakpoint />
 
 <main class="max-w-xl mx-auto space-y-8">
 	<h1 class="text-5xl tracking-tight font-black text-center">Primary Buttons</h1>
