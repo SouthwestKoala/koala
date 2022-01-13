@@ -19,6 +19,21 @@ export default {
       validation: Rule => Rule.required()
     },
     {
+      type: 'array',
+      name: 'tags',
+      title: 'Tags',
+      of: [
+        {
+          type: 'string',
+          name: 'tag',
+          title: 'Tag',
+        }
+      ],
+      options: {
+        layout: 'tags'
+      },
+    },
+    {
       type: 'seo',
       name: 'seo',
       title: 'SEO',
