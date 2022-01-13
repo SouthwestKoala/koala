@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { PortableTextBlocks } from '@portabletext/svelte/ptTypes';
-	import { goto } from '$app/navigation';
 	import { Solid } from '@southwestkoala/ui/icons/HeroIcons';
+	import { goto } from '$app/navigation';
 	import { Tags } from '$lib/components';
 	import { urlFor } from '$lib/services/sanity';
 
@@ -29,17 +29,17 @@
 	</div>
 	<div class="flex flex-col justify-between m-2 p-2">
 		<div>
-			<p class="mt-2 block text-xl font-medium text-accent-600 truncate pointer-events-none">
+			<p class="mt-2 block text-xl font-medium text-accent-500 truncate pointer-events-none">
 				{title}
 			</p>
-			<p class="mt-2 block text-base font-normal text-neutral-900 line-clamp-5">
+			<p class="mt-2 block text-base font-normal text-neutral-900 dark:text-neutral-100 line-clamp-5">
 				{body}
 			</p>
 		</div>
 		<div>
 			<Tags {tags} />
 		</div>
-		<a href={slug} class="text-accent-600 text-right inline-flex items-center justify-end"
+		<a href={slug} class="text-accent-500 text-right inline-flex items-center justify-end"
 			>Read <Solid.ArrowNarrowRight /></a
 		>
 	</div>
