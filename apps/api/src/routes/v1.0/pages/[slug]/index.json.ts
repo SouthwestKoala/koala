@@ -22,11 +22,9 @@ export const get: RequestHandler = async ({ params }) => {
 
 	const { page } = await client.fetch(query, queryParams);
 
-	if (page) {
-		return {
-			body: {
-				page
-			}
-		};
+	return {
+		body: {
+			page
+		}
 	}
 };

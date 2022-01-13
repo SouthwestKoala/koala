@@ -21,11 +21,9 @@ export const get: RequestHandler = async () => {
 	const queryParams = {};
 	const { posts } = await client.fetch(query, queryParams);
 
-	if (posts) {
-		return {
-			body: {
-				posts
-			}
-		};
-	}
+	return {
+		body: {
+			posts
+		}
+	};
 };
