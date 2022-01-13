@@ -1,38 +1,45 @@
 <script lang="ts">
 	import type { PortableTextBlocks } from '@portabletext/svelte/ptTypes';
 	import { goto } from '$app/navigation';
-	import { Solid } from '$lib/components/HeroIcons';
+	import { Solid } from '@southwestkoala/ui/icons/HeroIcons';
+	import { Tags } from '$lib/components';
 	import { urlFor } from '$lib/services/sanity';
 
 	export let body: PortableTextBlocks;
 	export let image: ImageProps;
 	export let slug: string;
+	export let tags: string[];
 	export let title: string;
 </script>
 
 <li class="relative md:col-span-2 md:grid md:grid-cols-2">
 	<div
-		class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-slate-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-slate-100 focus-within:ring-orange-500 overflow-hidden"
+		class="group block w-full aspect-w-10 aspect-h-7 rounded-lg bg-neutral-100 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-neutral-100 focus-within:ring-accent-500 overflow-hidden"
 	>
-		<img
-			src={urlFor(image).maxWidth(320).maxHeight(320).url()}
-			alt={image.asset.description}
-			class="object-cover pointer-events-none group-hover:opacity-75 group-hover:scale-105"
-		/>
-		<button type="button" class="absolute inset-0 focus:outline-none" on:click={() => goto(slug)}>
-			<span class="sr-only">Navigate to {title}</span>
-		</button>
+		{#if image}
+			<img
+				src={urlFor(image).maxWidth(320).maxHeight(320).url()}
+				alt={image.asset.description}
+				class="object-cover pointer-events-none group-hover:opacity-75 group-hover:scale-105"
+			/>
+			<button type="button" class="absolute inset-0 focus:outline-none" on:click={() => goto(slug)}>
+				<span class="sr-only">Navigate to {title}</span>
+			</button>
+		{/if}
 	</div>
 	<div class="flex flex-col justify-between m-2 p-2">
 		<div>
-			<p class="mt-2 block text-xl font-medium text-orange-600 truncate pointer-events-none">
+			<p class="mt-2 block text-xl font-medium text-accent-600 truncate pointer-events-none">
 				{title}
 			</p>
-			<p class="mt-2 block text-base font-normal text-slate-900 line-clamp-5">
+			<p class="mt-2 block text-base font-normal text-neutral-900 line-clamp-5">
 				{body}
 			</p>
 		</div>
-		<a href={slug} class="text-orange-600 text-right inline-flex items-center justify-end"
+		<div>
+			<Tags {tags} />
+		</div>
+		<a href={slug} class="text-accent-600 text-right inline-flex items-center justify-end"
 			>Read <Solid.ArrowNarrowRight /></a
 		>
 	</div>

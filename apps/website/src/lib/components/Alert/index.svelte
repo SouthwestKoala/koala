@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Solid } from '$lib/components/HeroIcons';
+	import { Solid } from '@southwestkoala/ui/icons/HeroIcons';
 
 	export let style: 'info' = 'info';
 </script>
@@ -36,14 +36,14 @@
 
 <style lang="postcss">
 	div.info {
-		@apply bg-blue-50 text-blue-700;
+		@apply text-accent-500 bg-accent-100 dark:bg-accent-900;
 	}
 
 	div.info svg {
-		@apply text-blue-400;
+		@apply text-neutral-900;
 	}
 
 	div.info a {
-		@apply hover:text-blue-600;
+		@apply hover:text-accent-600 dark:hover:text-accent-400;
 	}
 </style>

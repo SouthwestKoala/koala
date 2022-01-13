@@ -6,7 +6,7 @@
 <script lang="ts">
 	import { derived } from 'svelte/store';
 	import type { Readable } from 'svelte/store';
-	import { Solid } from '$lib/components/HeroIcons';
+	import { Solid } from '@southwestkoala/ui/icons/HeroIcons';
 	import { searchParams } from '$lib/stores/searchParams';
 
 	export let items: Readable<any[]>;
@@ -50,13 +50,13 @@
 <slot name="items" items={$paginatedItems} />
 
 {#if $pageCount > 1}
-	<nav class="border-t border-slate-200 px-4 flex items-center justify-between sm:px-0">
+	<nav class="border-t border-neutral-200 px-4 flex items-center justify-between sm:px-0">
 		<div class="-mt-px w-0 flex-1 flex">
 			<a
 				href={prevLink()}
-				class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-slate-500 hover:text-slate-700 hover:border-slate-300"
+				class="border-t-2 border-transparent pt-4 pr-1 inline-flex items-center text-sm font-medium text-neutral-500 hover:text-neutral-700 hover:border-neutral-300"
 			>
-				<Solid.ArrowNarrowLeft class="text-slate-400 w-5 h-5" />
+				<Solid.ArrowNarrowLeft class="text-neutral-400 w-5 h-5" />
 				Previous
 			</a>
 		</div>
@@ -65,7 +65,7 @@
 				{#if p === $currentPage}
 					<a
 						href={pageLink(p)}
-						class="border-orange-500 text-orange-600 dark:text-orange-400 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+						class="border-accent-500 text-accent-600 dark:text-accent-400 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
 						aria-current="page"
 					>
 						{p}
@@ -73,15 +73,15 @@
 				{:else if p === 1 || p === $pageCount || (p >= $currentPage - LIMIT && p <= $currentPage + LIMIT)}
 					<a
 						href={pageLink(p)}
-						class="border-transparent text-slate-500 hover:text-slate-700 hover:border-slate-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+						class="border-transparent text-neutral-500 hover:text-neutral-700 hover:border-neutral-300 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
 					>
 						{p}
 					</a>
 				{:else if p >= $currentPage - (LIMIT + 1) && p <= $currentPage + (LIMIT + 1)}
 					<span
-						class="border-transparent text-slate-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+						class="border-transparent text-neutral-500 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
 					>
-						<Solid.DotsHorizontal class="text-slate-400 w-5 h-5" />
+						<Solid.DotsHorizontal class="text-neutral-400 w-5 h-5" />
 					</span>
 				{/if}
 			{/each}
@@ -89,10 +89,10 @@
 		<div class="-mt-px w-0 flex-1 flex justify-end">
 			<a
 				href={nextLink()}
-				class="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-slate-500 hover:text-slate-700 hover:border-slate-300"
+				class="border-t-2 border-transparent pt-4 pl-1 inline-flex items-center text-sm font-medium text-neutral-500 hover:text-neutral-700 hover:border-neutral-300"
 			>
 				Next
-				<Solid.ArrowNarrowRight class="text-slate-400 w-5 h-5" />
+				<Solid.ArrowNarrowRight class="text-neutral-400 w-5 h-5" />
 			</a>
 		</div>
 	</nav>

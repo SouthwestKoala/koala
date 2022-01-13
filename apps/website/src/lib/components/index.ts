@@ -1,7 +1,6 @@
 export { default as Alert } from './Alert';
 export * as Dev from './Dev';
 export * as Github from './Github';
-export * as HeroIcons from './HeroIcons';
 export { default as Image } from './Image';
 export { default as Paginate } from './Paginate';
 export { default as Prose } from './Prose';

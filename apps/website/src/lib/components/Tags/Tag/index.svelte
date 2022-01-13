@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { derived } from 'svelte/store';
-	import { Solid } from '$lib/components/HeroIcons';
+	import { Solid } from '@southwestkoala/ui/icons/HeroIcons';
 	import { searchParams } from '$lib/stores/searchParams';
 	import { tags } from '$lib/stores/tags';
 
@@ -28,10 +28,10 @@
 
 <style lang="postcss">
 	a {
-		@apply text-xs text-orange-500 font-medium ml-1 px-1.5 py-0.5 rounded-full;
+		@apply text-xs text-accent-500 font-medium ml-1 px-1.5 py-0.5 rounded-full;
 	}
 
 	a.active {
-		@apply text-white bg-orange-500 shadow shadow-orange-500/50;
+		@apply text-white bg-accent-500 shadow shadow-accent-500/50;
 	}
 </style>
