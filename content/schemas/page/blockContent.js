@@ -4,7 +4,6 @@ export default {
   type: 'array',
   of: [
     {
-      title: 'Block',
       type: 'block',
       // Styles let you set what your user can mark up blocks with. These
       // correspond with HTML tags, but you can set any title or value
@@ -27,6 +26,7 @@ export default {
         decorators: [
           {title: 'Strong', value: 'strong'},
           {title: 'Emphasis', value: 'em'},
+          {title: 'Code', value: 'code'},
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -48,6 +48,9 @@ export default {
     // You can add additional types here. Note that you can't use
     // primitive types such as 'string' and 'number' in the same array
     // as a block type.
+    {
+      type: 'code',
+    },
     {
       type: 'image',
       options: {hotspot: true},
