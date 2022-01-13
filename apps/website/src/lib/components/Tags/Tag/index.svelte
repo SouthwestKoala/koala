@@ -34,4 +34,8 @@
 	a.active {
 		@apply text-white bg-accent-500 shadow shadow-accent-500/50;
 	}
+
+	a:hover {
+		@apply text-white bg-accent-500 shadow shadow-accent-500/50;
+	}
 </style>
