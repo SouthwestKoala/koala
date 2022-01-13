@@ -1,10 +1,10 @@
 <script lang="ts">
 	import '../app.css';
-	import { Dev } from '$lib/components';
 	import { Footer, Header } from '$lib/layouts/Site';
+	import { Breakpoint } from '@southwestkoala/ui/elements';
 </script>
 
-<Dev.Breakpoint />
+<Breakpoint />
 
 <Header />
 <slot />
