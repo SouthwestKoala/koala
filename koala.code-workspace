@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "✨ koala",
+			"path": "."
+		},
+		{
+			"name": "🚀 api",
+			"path": "apps/api"
+		},
+		{
+			"name": "🚀 website",
+			"path": "apps/website"
+		},
+		{
+			"name": "📦 @southwestkoala/ui",
+			"path": "packages/ui"
+		}
+	],
+	"settings": {}
+}
