@@ -13,7 +13,7 @@
 </script>
 
 {#if image}
-	<div class="relative">
+	<div class="relative not-prose">
 		{#if creditLine && url}
 			<div class="absolute bottom-0 right-0">
 				<div
