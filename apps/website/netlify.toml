@@ -1,2 +1,2 @@
 [build]
-  publish = "apps/website/build"
+  publish = "/opt/build/repo/apps/website/build"
