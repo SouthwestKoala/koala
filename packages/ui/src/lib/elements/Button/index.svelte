@@ -1,10 +1,13 @@
 <script lang="ts">
+	export let disabled = false;
 	export let primary = false;
+	export let type: 'button' | 'submit' = 'button';
 	export let variant: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'lg';
 </script>
 
 <button
-	type="button"
+	{type}
+	{disabled}
 	on:click
 	class:primary
 	class:xs={variant === 'xs'}
@@ -62,7 +65,7 @@
 	}
 
 	button.lg {
-		@apply px-4 py-2 text-base rounded-md;
+		@apply px-5 py-3 text-base rounded-md;
 	}
 
 	button.xl {
