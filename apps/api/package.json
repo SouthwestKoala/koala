@@ -25,6 +25,7 @@
 		"groq": "^2.15.0",
 		"jose": "^4.3.8",
 		"nanoid": "^3.2.0",
+		"pnpm": "^6.26.1",
 		"prettier": "^2.5.1",
 		"prettier-plugin-svelte": "^2.6.0",
 		"svelte": "^3.46.2",
