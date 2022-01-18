@@ -1,0 +1,5 @@
+[build]
+  command = "pnpm --workspace-root install && pnpm --workspace-root package && pnpm build"
+
+[build.environment]
+  NPM_FLAGS = "--only=production"
