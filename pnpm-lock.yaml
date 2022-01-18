@@ -75,6 +75,7 @@ importers:
       '@sanity/image-url': ^1.0.1
       '@southwestkoala/ui': link:../../packages/ui/package
       '@sveltejs/adapter-auto': next
+      '@sveltejs/adapter-netlify': ^1.0.0-next.39
       '@sveltejs/kit': next
       '@tailwindcss/aspect-ratio': ^0.4.0
       '@tailwindcss/forms': ^0.4.0
@@ -116,6 +117,7 @@ importers:
       '@sanity/image-url': 1.0.1
       '@southwestkoala/ui': link:../../packages/ui/package
       '@sveltejs/adapter-auto': 1.0.0-next.11
+      '@sveltejs/adapter-netlify': 1.0.0-next.39
       '@sveltejs/kit': 1.0.0-next.232_svelte@3.46.2
       '@tailwindcss/aspect-ratio': 0.4.0_tailwindcss@3.0.11
       '@tailwindcss/forms': 0.4.0_tailwindcss@3.0.11
