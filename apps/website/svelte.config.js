@@ -7,12 +7,7 @@ const config = {
 
 	kit: {
 		adapter: adapter(),
-		target: '#svelte',
-		prerender: {
-			crawl: true,
-			enabled: true,
-			entries: ['*', '/about']
-		}
+		target: '#svelte'
 	}
 };
 
