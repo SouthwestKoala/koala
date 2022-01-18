@@ -1,5 +1,4 @@
 export { default as Alert } from './Alert';
-export * as Dev from './Dev';
 export * as Github from './Github';
 export { default as Image } from './Image';
 export { default as Paginate } from './Paginate';
