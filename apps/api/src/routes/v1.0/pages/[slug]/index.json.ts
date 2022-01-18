@@ -26,5 +26,5 @@ export const get: RequestHandler = async ({ params }) => {
 		body: {
 			page
 		}
-	}
+	};
 };

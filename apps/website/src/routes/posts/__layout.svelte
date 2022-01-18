@@ -18,8 +18,8 @@
 
 			return {
 				status
-			}
-		};
+			};
+		}
 	};
 </script>
 

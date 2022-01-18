@@ -32,7 +32,9 @@
 			<p class="mt-2 block text-xl font-medium text-accent-500 truncate pointer-events-none">
 				{title}
 			</p>
-			<p class="mt-2 block text-base font-normal text-neutral-900 dark:text-neutral-100 line-clamp-5">
+			<p
+				class="mt-2 block text-base font-normal text-neutral-900 dark:text-neutral-100 line-clamp-5"
+			>
 				{body}
 			</p>
 		</div>

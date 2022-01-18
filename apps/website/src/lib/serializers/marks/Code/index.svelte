@@ -10,10 +10,7 @@
 	const { _key, href } = portableText.mark;
 </script>
 
-<code
-
-	><slot />
-</code>
+<code><slot /></code>
 
 <style lang="postcss">
 	code {

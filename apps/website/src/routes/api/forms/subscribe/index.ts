@@ -39,7 +39,7 @@ export const post: RequestHandler = async ({ body, url: { searchParams } }) => {
 			}
 		};
 	} else {
-		const {status } = res;
+		const { status } = res;
 
 		return {
 			status

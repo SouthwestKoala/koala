@@ -17,12 +17,12 @@ export const get: RequestHandler = async ({ params }) => {
 					slug: `/posts/${post?.slug}`
 				}
 			}
-		}
+		};
 	} else {
-		const { status } = res
+		const { status } = res;
 
 		return {
 			status
-		}
+		};
 	}
 };

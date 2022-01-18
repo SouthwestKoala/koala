@@ -2,8 +2,8 @@
 	import type { BlockProps } from '@portabletext/svelte';
 
 	export let portableText: BlockProps<{
-    code: string;
-    language: string;
+		code: string;
+		language: string;
 	}>;
 
 	let { code, language } = portableText.block;
@@ -16,7 +16,7 @@
 </pre>
 
 <style lang="postcss">
-  pre {
-    @apply -mx-4 px-4;
-  }
+	pre {
+		@apply -mx-4 px-4;
+	}
 </style>
