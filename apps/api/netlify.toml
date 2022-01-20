@@ -1,6 +1,6 @@
 [build]
   base = "apps/api"
-  command = "pnpm install --filter api && pnpm build"
+  command = "pnpm install --shamefully-hoist && pnpm build"
   publish = "build"
 
 [build.environment]
