@@ -1,7 +1,11 @@
 [build]
   base = "apps/api"
-  command = "pnpm install --dev --shamefully-hoist && pnpm build"
-  publish = "build"
+  command = "pnpm install --dev --filter api --shamefully-hoist && pnpm build"
+  publish = "build/"
 
 [build.environment]
+  AWS_LAMBDA_JS_RUNTIME = "nodejs14.x"
   NPM_FLAGS = "--only=production"
+
+[functions]
+  node_bundler = "esbuild"
