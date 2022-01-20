@@ -8,17 +8,21 @@ export const get: RequestHandler = async () => {
 	if (res.ok) {
 		const { posts } = await res.json();
 
-		if (posts) {
-			return {
-				body: {
-					posts: [
-						...posts.map((post: { slug: string }) => ({
-							...post,
-							slug: `/posts/${post.slug}`
-						}))
-					]
-				}
-			};
-		}
+		return {
+			body: {
+				posts: [
+					...posts.map((post: { slug: string }) => ({
+						...post,
+						slug: `/posts/${post.slug}`
+					}))
+				]
+			}
+		};
+	} else {
+		const { status } = res;
+
+		return {
+			status
+		};
 	}
-};
+}

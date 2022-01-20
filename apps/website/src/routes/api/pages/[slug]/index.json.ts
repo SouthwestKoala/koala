@@ -10,12 +10,16 @@ export const get: RequestHandler = async ({ params }) => {
 	if (res.ok) {
 		const { page } = await res.json();
 
-		if (page) {
-			return {
-				body: {
-					page
-				}
-			};
+		return {
+			body: {
+				page
+			}
 		}
+	} else {
+		const { status } = res;
+
+		return {
+			status
+		};
 	}
 };

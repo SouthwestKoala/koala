@@ -1,18 +1,12 @@
 import { api_url } from '$lib/services/api';
 import type { RequestHandler } from '@sveltejs/kit';
-import type { ReadOnlyFormData } from '@sveltejs/kit/types/helper';
 import { base64url } from 'jose';
 
-export const post: RequestHandler = async ({ body, url: { searchParams } }) => {
+export const post: RequestHandler = async ({ request, url: { searchParams }}) => {
 	const state = searchParams.get('state');
-	const form = body as ReadOnlyFormData;
+	const body = await request.formData();
 
-	const { email, serial } = [...form.entries()].reduce((data, [key, value]) => {
-		data[key] = value;
-		return data;
-	}, {} as Record<string, unknown>);
-
-	if (serial) {
+	if (body.has('serial')) {
 		// beep-boop
 		return {
 			status: 200
@@ -22,7 +16,7 @@ export const post: RequestHandler = async ({ body, url: { searchParams } }) => {
 	const url = api_url({ path: `forms/subscribe` });
 
 	const res = await fetch(url, {
-		body: JSON.stringify({ email }),
+		body: JSON.stringify({ email: body.get('email') }),
 		headers: {
 			'Content-Type': 'application/json'
 		},
@@ -30,7 +24,7 @@ export const post: RequestHandler = async ({ body, url: { searchParams } }) => {
 	});
 
 	if (res.ok) {
-		const location = (state && base64url.decode(state)) || '/';
+		const location = (state && base64url.decode(state).toString()) || '/';
 
 		return {
 			status: 303,
@@ -39,7 +33,7 @@ export const post: RequestHandler = async ({ body, url: { searchParams } }) => {
 			}
 		};
 	} else {
-		const { status } = res;
+		const { status } = res
 
 		return {
 			status
