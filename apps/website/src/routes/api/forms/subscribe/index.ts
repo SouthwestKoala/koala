@@ -2,7 +2,7 @@ import { api_url } from '$lib/services/api';
 import type { RequestHandler } from '@sveltejs/kit';
 import { base64url } from 'jose';
 
-export const post: RequestHandler = async ({ request, url: { searchParams }}) => {
+export const post: RequestHandler = async ({ request, url: { searchParams } }) => {
 	const state = searchParams.get('state');
 	const body = await request.formData();
 
@@ -33,7 +33,7 @@ export const post: RequestHandler = async ({ request, url: { searchParams }}) =>
 			}
 		};
 	} else {
-		const { status } = res
+		const { status } = res;
 
 		return {
 			status

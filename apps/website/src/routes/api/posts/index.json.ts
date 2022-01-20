@@ -25,4 +25,4 @@ export const get: RequestHandler = async () => {
 			status
 		};
 	}
-}
+};

@@ -14,7 +14,7 @@ export const get: RequestHandler = async ({ params }) => {
 			body: {
 				page
 			}
-		}
+		};
 	} else {
 		const { status } = res;
 
