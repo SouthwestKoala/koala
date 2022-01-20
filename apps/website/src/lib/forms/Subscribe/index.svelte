@@ -4,7 +4,7 @@
 </script>
 
 <section>
-	<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center">
+	<div class="max-w-screen-2xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center">
 		<div class="lg:w-0 lg:flex-1">
 			<h2>Sign up for notifications</h2>
 			<p class="mt-3 max-w-3xl text-lg leading-6">
