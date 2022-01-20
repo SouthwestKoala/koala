@@ -12,7 +12,7 @@
 	</div>
 	<div class="mt-8 md:mt-0 md:order-1">
 		<p class="text-center text-sm text-neutral-500">
-			&copy; {new Date().getFullYear()} Southwest Koala
+			Copyright &copy; {new Date().getFullYear()} Southwest Koala. All rights reserved.
 		</p>
 	</div>
 </footer>
