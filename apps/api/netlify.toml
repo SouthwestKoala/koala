@@ -1,10 +1,6 @@
 [build]
   base = "apps/api"
-  command = "pnpm install --dev --filter api --shamefully-hoist && pnpm build"
   publish = "build/"
-
-[build.environment]
-  NPM_FLAGS = "--only=production"
 
 [functions]
   node_bundler = "esbuild"
