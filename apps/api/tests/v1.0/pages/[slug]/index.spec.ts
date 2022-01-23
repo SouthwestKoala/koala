@@ -8,7 +8,22 @@ test.describe('GET /v1.0/pages/[slug].json', () => {
 			expect(res.ok()).toBeTruthy();
 		});
 
-		test('should respond with a single page', async ({ request }) => {
+		test('should respond with JSON', async ({ request }) => {
+			const response = await request
+				.get(`http://localhost:3001/v1.0/pages/about.json`)
+
+				expect(response.headers()['content-type']).toBe('application/json; charset=utf-8')
+		});
+
+		test('should respond with a single page resource', async ({ request }) => {
+			const resource = await request
+				.get(`http://localhost:3001/v1.0/pages/about.json`)
+				.then((res) => res.json());
+
+			expect(resource).toHaveProperty('page')
+		});
+
+		test('should respond with a single page resource of the requested page', async ({ request }) => {
 			const { page } = await request
 				.get(`http://localhost:3001/v1.0/pages/about.json`)
 				.then((res) => res.json());

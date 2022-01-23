@@ -9,7 +9,8 @@
     "build": "pnpm install --filter {apps} && pnpm build --filter {apps}",
     "package": "pnpm install --filter {packages} && pnpm package --filter {packages}",
     "lint": "pnpm lint --filter {apps} --filter {packages}",
-    "format": "pnpm format --filter {apps} --filter {packages}"
+    "format": "pnpm format --filter {apps} --filter {packages}",
+    "test": "pnpm test --filter {apps} --filter {packages}"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.10.0",
@@ -18,7 +19,7 @@
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.5.1",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.5"
   },
   "repository": {
     "type": "git",
