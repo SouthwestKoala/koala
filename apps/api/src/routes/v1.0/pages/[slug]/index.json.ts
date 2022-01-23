@@ -22,9 +22,19 @@ export const get: RequestHandler = async ({ params }) => {
 
 	const { page } = await client.fetch(query, queryParams);
 
-	return {
-		body: {
-			page
+	if (page) {
+		return {
+			status: 200,
+			headers: {
+				'content-type': 'application/json'
+			},
+			body: {
+				page
+			},
 		}
-	};
+	} else {
+		return {
+			status: 404
+		}
+	}
 };
