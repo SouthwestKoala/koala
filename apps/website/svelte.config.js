@@ -6,10 +6,7 @@ const config = {
 	preprocess: [preprocess({ postcss: true })],
 
 	kit: {
-		adapter: adapter({
-			split: true
-		}),
-		target: '#svelte'
+		adapter: adapter()
 	}
 };
 

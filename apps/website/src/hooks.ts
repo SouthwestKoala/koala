@@ -7,15 +7,13 @@ export const handle: Handle = async ({ event, resolve }) => {
 		url: { pathname }
 	} = event;
 
-	if (dev) {
-		console.time(`${method} ${pathname}`);
-	}
+	const label = `${method} ${pathname}`;
+
+	dev && console.time(label);
 
 	const response = await resolve(event);
 
-	if (dev) {
-		console.timeEnd(`${method} ${pathname}`);
-	}
+	dev && console.timeEnd(label);
 
 	return response;
 };

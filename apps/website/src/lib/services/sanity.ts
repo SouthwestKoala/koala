@@ -8,4 +8,4 @@ const builder = imageUrlBuilder({
 	dataset: SANITY_DATASET
 });
 
-export const urlFor = (image: SanityImageSource): ImageUrlBuilder => builder.image(image);
+export const urlFor = (source: SanityImageSource): ImageUrlBuilder => builder.image(source);

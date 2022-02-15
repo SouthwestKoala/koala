@@ -1,11 +1,11 @@
 <script lang="ts">
 	import '../app.css';
-	import { Footer, Header } from '$lib/layouts/Site';
-	import { Breakpoint } from '@southwestkoala/ui/elements';
+	import Site from '$lib/layouts/Site';
+	import { Breakpoint } from '@southwestkoala/ui/utility';
 </script>
 
 <Breakpoint />
 
-<Header />
-<slot />
-<Footer />
+<Site>
+	<slot />
+</Site>

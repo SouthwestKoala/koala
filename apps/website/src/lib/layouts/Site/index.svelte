@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Footer, Header } from '$lib/layouts/Site';
+	import { Cookie, Footer, Header } from '$lib/layouts/Site';
 </script>
 
 <div>

@@ -37,7 +37,6 @@
 	export let image: ImageProps;
 	export let keywords: string[];
 	export let lead: string;
-	export let slug: string;
 	export let title: string;
 </script>
 

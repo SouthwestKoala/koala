@@ -67,4 +67,6 @@
 			<PortableText blocks={body.slice(1)} {serializers} />
 		</svelte:fragment>
 	</Prose>
+	<div slot="lead">Lead</div>
+	<div slot="side">Side</div>
 </Page>
