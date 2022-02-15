@@ -1,29 +1,22 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import { client } from '$lib/services/sanity';
-import groq from 'groq';
+import { getPosts } from '$lib/api/posts';
 
-export const get: RequestHandler = async () => {
-	const query = groq`
-    {
-      "posts": *[_type == "post" && !(_id in path("drafts.**")) && defined(slug.current)] {
-        "body": pt::text(body[0...1]),
-				image {
-					...,
-					asset->
-				},
-        publishedAt,
-				"slug": slug.current,
-				"tags": coalesce(tags[], []) | order(@ asc),
-				"title": coalesce(linkTitle, title),
-      } | order(publishedAt desc)
-    }
-  `;
-	const queryParams = {};
-	const { posts } = await client.fetch(query, queryParams);
+export const get: RequestHandler = async ({ params }) => {
+	const { posts } = await getPosts({ params });
 
-	return {
-		body: {
-			posts
-		}
-	};
+	if (posts) {
+		return {
+			status: 200,
+			headers: {
+				'content-type': 'application/json'
+			},
+			body: {
+				posts
+			}
+		};
+	} else {
+		return {
+			status: 404
+		};
+	}
 };

@@ -1,11 +1,9 @@
 .DS_Store
 .svelte-kit
-
 build
 node_modules
 package
 build-tests
-
 .env
 .env.*
 !.env.example
