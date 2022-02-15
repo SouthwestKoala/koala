@@ -13,15 +13,15 @@
 }
 
 :root {
-	--theme-neutral-100: theme('colors.neutral.100');
-	--theme-neutral-200: theme('colors.neutral.200');
-	--theme-neutral-300: theme('colors.neutral.300');
-	--theme-neutral-400: theme('colors.neutral.400');
-	--theme-neutral-500: theme('colors.neutral.500');
-	--theme-neutral-600: theme('colors.neutral.600');
-	--theme-neutral-700: theme('colors.neutral.700');
-	--theme-neutral-800: theme('colors.neutral.800');
-	--theme-neutral-900: theme('colors.neutral.900');
+	--theme-neutral-100: theme('colors.slate.100');
+	--theme-neutral-200: theme('colors.slate.200');
+	--theme-neutral-300: theme('colors.slate.300');
+	--theme-neutral-400: theme('colors.slate.400');
+	--theme-neutral-500: theme('colors.slate.500');
+	--theme-neutral-600: theme('colors.slate.600');
+	--theme-neutral-700: theme('colors.slate.700');
+	--theme-neutral-800: theme('colors.slate.800');
+	--theme-neutral-900: theme('colors.slate.900');
 }
 
 :root {
