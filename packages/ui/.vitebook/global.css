@@ -1,0 +1,37 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: 'Inter', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: 'Inter var', sans-serif;
+	}
+}
+
+:root {
+	--theme-neutral-100: theme('colors.neutral.100');
+	--theme-neutral-200: theme('colors.neutral.200');
+	--theme-neutral-300: theme('colors.neutral.300');
+	--theme-neutral-400: theme('colors.neutral.400');
+	--theme-neutral-500: theme('colors.neutral.500');
+	--theme-neutral-600: theme('colors.neutral.600');
+	--theme-neutral-700: theme('colors.neutral.700');
+	--theme-neutral-800: theme('colors.neutral.800');
+	--theme-neutral-900: theme('colors.neutral.900');
+}
+
+:root {
+	--theme-primary-100: theme('colors.orange.100');
+	--theme-primary-200: theme('colors.orange.200');
+	--theme-primary-300: theme('colors.orange.300');
+	--theme-primary-400: theme('colors.orange.400');
+	--theme-primary-500: theme('colors.orange.500');
+	--theme-primary-600: theme('colors.orange.600');
+	--theme-primary-700: theme('colors.orange.700');
+	--theme-primary-800: theme('colors.orange.800');
+	--theme-primary-900: theme('colors.orange.900');
+}
