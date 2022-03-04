@@ -14,7 +14,7 @@
 
 <style lang="postcss">
 	code {
-		@apply text-current font-mono bg-accent-100/50 dark:bg-accent-900/50 -mx-0.5 px-0.5;
+		@apply text-current font-mono bg-primary-100/50 dark:bg-primary-900/50 -mx-0.5 px-0.5;
 
 		&::after {
 			content: none;

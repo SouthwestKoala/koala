@@ -65,7 +65,7 @@
 				{#if p === $currentPage}
 					<a
 						href={pageLink(p)}
-						class="border-accent-500 text-accent-600 dark:text-accent-400 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
+						class="border-primary-500 text-primary-600 dark:text-primary-400 border-t-2 pt-4 px-4 inline-flex items-center text-sm font-medium"
 						aria-current="page"
 					>
 						{p}

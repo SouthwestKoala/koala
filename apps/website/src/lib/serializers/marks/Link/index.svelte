@@ -14,6 +14,6 @@
 
 <style lang="postcss">
 	a {
-		@apply text-current font-normal decoration-accent-500 decoration-2 underline-offset-4 hover:text-accent-500;
+		@apply text-current font-normal decoration-primary-500 decoration-2 underline-offset-4 hover:text-primary-500;
 	}
 </style>

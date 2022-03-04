@@ -36,7 +36,7 @@
 
 <style lang="postcss">
 	div.info {
-		@apply text-accent-500 bg-accent-100 dark:bg-accent-900;
+		@apply text-primary-500 bg-primary-100 dark:bg-primary-900;
 	}
 
 	div.info svg {
@@ -44,6 +44,6 @@
 	}
 
 	div.info a {
-		@apply hover:text-accent-600 dark:hover:text-accent-400;
+		@apply hover:text-primary-600 dark:hover:text-primary-400;
 	}
 </style>
