@@ -5,9 +5,9 @@ import { defaultThemePlugin, DefaultThemeConfig } from '@vitebook/theme-default/
 export default defineConfig<DefaultThemeConfig>({
 	include: ['src/**/*.md', 'src/**/*.story.svelte'],
 	alias: {
-    $app: '/node_modules/@sveltejs/kit/assets/app',
-    $lib: '/src/lib',
-  },
+		$app: '/node_modules/@sveltejs/kit/assets/app',
+		$lib: '/src/lib'
+	},
 	plugins: [svelteMarkdownPlugin(), clientPlugin({ appFile: 'App.svelte' }), defaultThemePlugin()],
 	site: {
 		title: 'Design System',

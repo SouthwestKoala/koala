@@ -2,7 +2,6 @@ import groq from 'groq';
 import { client } from '$lib/services/sanity';
 import type { DatasetRequest } from './types';
 
-
 /**
  * Get a post from the dataset.
  *

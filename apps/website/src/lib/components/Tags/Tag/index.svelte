@@ -28,14 +28,14 @@
 
 <style lang="postcss">
 	a {
-		@apply text-xs text-accent-500 font-medium ml-1 px-1.5 py-0.5 rounded-full;
+		@apply text-xs text-primary-500 font-medium ml-1 px-1.5 py-0.5 rounded-full;
 	}
 
 	a.active {
-		@apply text-white bg-accent-500 shadow shadow-accent-500/50;
+		@apply text-white bg-primary-500 shadow shadow-primary-500/50;
 	}
 
 	a:hover {
-		@apply text-white bg-accent-500 shadow shadow-accent-500/50;
+		@apply text-white bg-primary-500 shadow shadow-primary-500/50;
 	}
 </style>

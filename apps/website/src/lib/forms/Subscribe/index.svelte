@@ -29,7 +29,7 @@
 			</form>
 			<p class="mt-3 text-sm text-neutral-700 dark:text-neutral-300">
 				We care about the protection of your data. Read our
-				<a href="/privacy" class="text-accent-500 font-medium underline"> Privacy Policy. </a>
+				<a href="/privacy" class="text-primary-500 font-medium underline"> Privacy Policy. </a>
 			</p>
 		</div>
 	</div>
@@ -41,10 +41,10 @@
 	}
 
 	h2 {
-		@apply text-3xl sm:text-4xl font-extrabold tracking-tight text-accent-500;
+		@apply text-3xl sm:text-4xl font-extrabold tracking-tight text-primary-500;
 	}
 
 	input {
-		@apply w-full px-5 py-3 border border-transparent placeholder-neutral-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-accent-500 focus:border-neutral-100 sm:max-w-xs rounded-md;
+		@apply w-full px-5 py-3 border border-transparent placeholder-neutral-500 focus:ring-2 focus:ring-offset-2 focus:ring-offset-transparent focus:ring-primary-500 focus:border-neutral-100 sm:max-w-xs rounded-md;
 	}
 </style>

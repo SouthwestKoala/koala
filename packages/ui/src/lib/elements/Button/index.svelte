@@ -1,30 +1,30 @@
 <script lang="ts">
-  import { createEventDispatcher } from "svelte";
+	import { createEventDispatcher } from 'svelte';
 
-  export let disabled = false;
-  export let primary = false;
-  export let type: "button" | "menu" | "reset" | "submit" = "button";
-  export let variant: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'lg';
+	export let disabled = false;
+	export let primary = false;
+	export let type: 'button' | 'menu' | 'reset' | 'submit' = 'button';
+	export let variant: 'xs' | 'sm' | 'md' | 'lg' | 'xl' = 'lg';
 
-  createEventDispatcher();
+	createEventDispatcher();
 </script>
 
 <button
-  {disabled}
-  {type}
-  class:primary
-  class:xs={variant === 'xs'}
+	{disabled}
+	{type}
+	class:primary
+	class:xs={variant === 'xs'}
 	class:sm={variant === 'sm'}
 	class:md={variant === 'md'}
 	class:lg={variant === 'lg'}
 	class:xl={variant === 'xl'}
-  on:click
+	on:click
 >
-  <slot>{type.toString().charAt(0).toLocaleUpperCase() + type.slice(1)}</slot>
+	<slot>{type.toString().charAt(0).toLocaleUpperCase() + type.slice(1)}</slot>
 </button>
 
 <style lang="postcss">
-  button {
+	button {
 		@apply inline-flex items-center justify-center;
 		@apply border border-transparent shadow;
 		@apply font-medium;
